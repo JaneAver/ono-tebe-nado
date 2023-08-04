@@ -1,2 +1,2 @@
 # ono-tebe-nado
-https://vscode.dev/github/JaneAver/ono-tebe-nado/blob/main
+http://127.0.0.1:5500/index.html
