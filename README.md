@@ -1,2 +1,2 @@
-git@github.com:JaneAver/ono-tebe-nado.git
+https://github.com/JaneAver/ono-tebe-nado.git
 
