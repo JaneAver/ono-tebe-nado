@@ -18,8 +18,8 @@ body {
   line-height: normal;
   display: grid;
   grid-template-columns: 1fr 1fr auto;
-  justify-self: start;
-  align-items: start;
+  justify-items: start;
+  align-items: center;
   margin-top: 92px;
   margin-bottom: 92px;
   margin-right: 49px;
@@ -85,7 +85,8 @@ body {
   font-weight: 400;
   line-height: 24.3px; /* 135% */
   max-width: 240px;
-  height: 24px;
+  padding-bottom: 7px;
+  padding-top: 5px;
   flex-shrink: 0;
   text-underline-position: under;
 }
@@ -107,12 +108,12 @@ body {
   height: 100%;
   flex-shrink: 0;
   opacity: 0.6000000238418579;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 2;
 }
 
 .cover-title {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Raleway;
   font-size: 100px;
   font-style: normal;
@@ -120,13 +121,15 @@ body {
   line-height: 115%;
   letter-spacing: 60px;
   text-transform: uppercase;
+  position: relative;
   margin: 0;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .aligned-text {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Raleway;
   font-size: 100px;
   font-style: normal;
@@ -135,10 +138,11 @@ body {
   text-transform: uppercase;
   letter-spacing: 30px;
   padding-top: 165px;
+  padding-left: 50px;
 }
 
 .letter-spacing-extended {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Raleway;
   font-size: 100px;
   font-style: normal;
@@ -149,7 +153,7 @@ body {
 }
 
 .aligned-text-center {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Raleway, sans-serif;
   font-size: 100px;
   font-style: normal;
@@ -162,7 +166,7 @@ body {
 }
 
 .aligned-text-right {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Raleway, sans-serif;
   font-size: 100px;
   font-style: normal;
@@ -179,18 +183,20 @@ body {
 }
 
 .cover-discription {
+  color: rgba(255, 255, 255, 1);
   min-width: 968px;
   min-height: 28px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: flex-end;
   padding-left: 422px;
-  padding-bottom: 62px;
+  position: relative;
+  z-index: 2;
 }
 
 .cover-discription_text {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Raleway, sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -209,11 +215,13 @@ body {
   flex-shrink: 0;
   background-color: transparent;
   border-style: solid;
-  border-color: #fff;
+  border-color: rgba(255, 255, 255, 1);
+  padding-right: 50px;
+  text-decoration: none;
 }
 
 .bet-button-text {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   text-align: center;
   font-family: Raleway, sans-serif;
   font-size: 22px;
@@ -226,11 +234,12 @@ body {
 }
 
 .lots {
-  box-sizing: border-box;
   min-width: 1340px;
   min-height: 579px;
   flex-shrink: 0;
-  padding: 180px 50px;
+  padding-top: 180px;
+  padding-left: 25px;
+  padding-right: 50px;
 }
 
 .lots_heading {
@@ -253,23 +262,21 @@ body {
 
 .lots_card-list-item {
   list-style-type: none;
+  position: relative;
   min-height: 450px;
   max-width: 430px;
   flex-grow: 1;
-  padding-right: 25px;
-}
-
-.card-link {
-  display: contents;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   width: 430px;
   min-height: 450px;
   background-position: center;
   background-size: cover;
-  z-index: 1;
 }
 
 .card_type_film {
@@ -288,38 +295,35 @@ body {
 }
 
 .card_title {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Raleway, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  width: 350px;
   margin: 0;
-  padding-right: 40px;
   padding-left: 40px;
   padding-top: 50px;
   text-decoration: underline;
   text-transform: uppercase;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  z-index: 3;
+  z-index: 2;
 }
 
 .card_text {
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 120%;
+  text-decoration: none;
   margin: 0;
-  width: 390px;
-  padding-bottom: 50px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 50px;
+  z-index: 2;
+  
 }
 
 .lots_look-more-link {
